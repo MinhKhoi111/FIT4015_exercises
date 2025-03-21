@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.products, .product-detail {
+    text-align: left;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-list, .detail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.detail-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-item, .detail-info {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background: white;
+}
+.product-item img, .detail-container img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+.detail-button, .back-button, .buy-now, .installment {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.detail-button, .back-button {
+    background-color: #007bff;
+}
+.buy-now {
+    background-color: #28a745;
+}
+.installment {
+    background-color: #ffc107;
+    color: black;
+}
+.detail-button:hover, .back-button:hover {
+    background-color: #0056b3;
+}
+.buy-now:hover {
+    background-color: #218838;
+}
+.installment:hover {
+    background-color: #e0a800;
+}
+.promotion-container {
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #d9534f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: #fff3f3;
+    width: 35%;
+    position: relative;
+}
+.promotion-container h2 {
+    color: #d9534f;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 5px;
+}
+.promotion-container ul {
+    list-style: none;
+    padding: 0;
+}
+.promotion-container li {
+    margin: 10px 0;
+    padding: 8px 10px;
+    background: rgba(217, 83, 79, 0.1);
+    border-radius: 5px;
+    font-weight: bold;
+    color: #d9534f;
+}

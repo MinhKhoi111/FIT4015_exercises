@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #007bff !important;
+}
+.navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+.navbar .nav-link:hover {
+    color: #ffdd57 !important;
+}
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+.cart-popup.active {
+    right: 0;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-header h5 {
+    margin: 0;
+    font-weight: bold;
+    color: #007bff;
+}
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn-close:hover {
+    color: red;
+}
+.cart-content {
+    margin-top: 15px;
+    color: #555;
+}
